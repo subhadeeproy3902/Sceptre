@@ -30,7 +30,7 @@ const Chatbox = ({ newChat, setNewChat }) => {
     setLoading(true)
     setNewChat(false)
     setInputValue('')
-    if (/your name|name|about|who are u|what are u/i.test(inputValue)) {
+    if (/your name|about u|abt u|abt you|about you|who are u|what are u/i.test(inputValue)) {
       setLoading(false)
       setMessages(prevMessages => [...prevMessages, { text: "I am Scepter. You might know me as Loki's wand. I have been sent by him to Earth by him because he is busy holding the multiverse tree. Let me know if you have any further questions.", isBot: true }]);
     }
@@ -41,7 +41,7 @@ const Chatbox = ({ newChat, setNewChat }) => {
     else {
       const res = await sendMsgToOpenAi(inputValue);
       setLoading(false)
-      setMessages(prevMessages => [...prevMessages, { text: res.content, isBot: true }]);
+      setMessages(prevMessages => [...prevMessages, { text: res == null ? "Try Again.... I was unable to reply because you sent a heavy load ... Arghh these HUMANS !!" : res, isBot: true }]);
     }
   }
 
