@@ -30,7 +30,7 @@ const Sidebar = ({ setNewChat }) => {
           <div className='px-4 h-[82.5%]'>
             <div className='flex w-full flex-col justify-center items-center pr-2 gap-3'>
               <img src={gptLogo} alt="" className='rounded-full w-32 h-32 hover:scale-105 duration-200 ease-in-out' style={{ boxShadow: "0 0 50px #23994ab3" }} />
-              <span className='brand mt-2 text-[#d6ae2f] font-nova text-4xl font-bold'>Sceptre</span>
+              <span className='brand mt-2 text-[#d6ae2f] font-nova text-4xl font-bold'>Scepter</span>
             </div>
             <button className='flex text-[#d6d3ae] items-center w-full mt-5 mb-8 py-2 px-4 rounded-md justify-center pr-8 font-semibold text-lg bg-gradient-to-br hover:bg-gradient-to-tl duration-500 ease-in-out from-[#50630d] to-[#0b891e]' onClick={() => { setNewChat(true), setSidebarOpen(false) }}>
               <img src={addBtn} alt="" className='h-5 pr-2' />
@@ -38,7 +38,7 @@ const Sidebar = ({ setNewChat }) => {
             </button>
             <div className='flex w-full flex-col justify-center items-center gap-3'>
               <div className='flex bg-transparent items-center gap-2 rounded text-gray-300 w-full'>
-                <p className='text-center'>Sceptre, Loki's wand, descends to Earth to dispel misconceptions about Loki. From Avengers' ambiguity to his heroic end, Loki's legacy shines. Now, he safeguards the Multiverse, and I represent the God of Mischief, answering your questions.</p>
+                <p className='text-center'>Scepter, Loki's wand, descends to Earth to dispel misconceptions about Loki. From Avengers' ambiguity to his heroic end, Loki's legacy shines. Now, he safeguards the Multiverse, and I represent the God of Mischief, answering your questions.</p>
               </div>
             </div>
           </div>

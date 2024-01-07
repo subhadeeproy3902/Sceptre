@@ -32,7 +32,7 @@ const Chatbox = ({ newChat, setNewChat }) => {
     setInputValue('')
     if (/your name|name|about|who are u|what are u/i.test(inputValue)) {
       setLoading(false)
-      setMessages(prevMessages => [...prevMessages, { text: "I am Sceptre. You might know me as Loki's wand. I have been sent by him to Earth by him because he is busy holding the multiverse tree. Let me know if you have any further questions.", isBot: true }]);
+      setMessages(prevMessages => [...prevMessages, { text: "I am Scepter. You might know me as Loki's wand. I have been sent by him to Earth by him because he is busy holding the multiverse tree. Let me know if you have any further questions.", isBot: true }]);
     }
     else if (/chat\s*gpt/i.test(inputValue)) {
       setLoading(false);
