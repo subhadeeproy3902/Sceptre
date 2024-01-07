@@ -23,7 +23,7 @@ const Sidebar = ({ setNewChat }) => {
         </svg>
       </button>
       <aside id="default-sidebar" className={`fixed sm:flex-3 top-0 left-0 z-40 w-64 h-screen transition-transform ${sidebarOpen ? 'translate-x-0' : '-translate-x-full'} sm:translate-x-0`} aria-label="Sidebar">
-        <div className="h-screen px-3 py-4 pt-10 overflow-y-hidden bg-gradient-to-b from-[#012400] to-[#0b450a] border-r border-r-green-900">
+        <div className="h-screen px-3 py-4 pt-10 bg-gradient-to-b from-[#012400] to-[#0b450a] border-r border-r-green-900">
           <button onClick={closeSidebar} className={`inline-flex items-center p-2 mt-2 ms-3 text-sm text-yellow-500 absolute top-0 -right-12 rounded-lg sm:hidden hover:bg-yellow-200 focus:outline-none focus:ring-2 focus:ring-gray-200 ${sidebarOpen ? "" : "hidden"}`}>
             <svg fill="currentColor" className='w-6 h-6' viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg"><title>ionicons-v5-m</title><path d="M289.94,256l95-95A24,24,0,0,0,351,127l-95,95-95-95A24,24,0,0,0,127,161l95,95-95,95A24,24,0,1,0,161,385l95-95,95,95A24,24,0,0,0,385,351Z" /></svg>
           </button>
