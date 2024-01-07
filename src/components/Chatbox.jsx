@@ -66,7 +66,7 @@ const Chatbox = ({ newChat, setNewChat }) => {
 
   return (
     <>
-      <div className='overflow-hidden overflow-y-scroll scroll-smooth w-full max-w-6xl' style={{ height: "calc(100vh - 11rem)", scrollbarWidth: 'none', msOverflowStyle: 'none' }}>
+      <div className='overflow-y-scroll scroll-smooth w-full max-w-6xl' style={{ height: "calc(100vh - 11rem)", scrollbarWidth: 'none', msOverflowStyle: 'none' }}>
         {messages.map((message, index) => (
           <div key={index} className={`m-1 mb-4 p-3 flex-col sm:flex-row rounded-md text-white text-sm md:text-base sm:m-4 sm:p-5 flex sm:px-5 items-start gap-4 ${message.isBot ? "bg-gradient-to-b from-lime-600/30 to-green-600/40" : ""}`}>
             <img src={message.isBot ? logo : userIcon} alt="" className='h-8 sm:h-10 object-cover rounded-full border ring-1 ring-offset-0 ring-lime-500 border-lime-300' />

@@ -7,6 +7,6 @@
 }
 
 body{
-  overflow: hidden;
+  scroll-behavior: smooth;
   height: 100vh;
 }
